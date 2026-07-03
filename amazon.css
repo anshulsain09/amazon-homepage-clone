@@ -19,7 +19,7 @@
     width:100px;
 }
 .logo{
-    background-image:url("amazon_logo.png");
+    background-image:url("images/amazon_logo.png");
     background-size: cover;
     height:50px;
     width:100%;
@@ -205,7 +205,7 @@ font-weight:700;
 
 /* HERO SECTION */
 .hero-section{
-    background-image:url("hero-image (3).png");
+    background-image:url("images/hero-image (3).png");
     height:600px;
     background-size:cover;
     
@@ -314,7 +314,7 @@ font-weight:700;
   
     width:40%;
     margin-left:18px;
-    /* margin-top:60px; */
+    
 }
 .box2-2,
 .box2-4{
@@ -343,6 +343,8 @@ margin-right:18px;
     
     
 }
+
+
 
 .box3{
     height:450px;
@@ -394,10 +396,6 @@ margin-right:18px;
 position:relative;
 top:8px;
     }
-
-
-
-
 
 
 .box4{
@@ -475,11 +473,43 @@ font-size:12px;
     height:470PX;
   
     background-color:  #e3e6e6;
-    /* margin-left:28px;
-      margin-right:28px; */
+  
 }
 .b2 img{
     transform:scaleY(1.1);
+
+}
+@media (max-width:768px){
+
+.boxes1{
+    flex-direction:column;
+    align-items:center;
+}
+
+.box1,
+.box2,
+.box3,
+.box4{
+    width:95%;
+    height:auto;
+    margin:15px 0;
+}
+
+.box2img{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:15px;
+    padding:15px;
+}
+
+.box2-1,
+.box2-2,
+.box2-3,
+.box2-4{
+    width:48%;
+    margin:0;
+}
 
 }
 
@@ -570,7 +600,7 @@ ul{
     
 }
 .footp3logo{
-    background-image: url("logo.png");
+    background-image: url("images/logo.png");
    background-size: cover;
     height:50px;
     width:150px;
