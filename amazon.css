@@ -109,7 +109,7 @@ html, body{
   font-size:18px;
 }
 #searchinput{
-    width:100%;
+    width:800px;
     min-width:0;
     flex:1;
     font-size:16px;
