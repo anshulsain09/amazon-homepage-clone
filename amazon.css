@@ -78,10 +78,13 @@ html, body{
     height:35px;
     
 }
-.nav-search:hover{
+.searchsection:hover{
     border:2px solid  rgb(251, 160, 1);
+     
     border-radius:6.3px;
+    
     height:38px;
+   
 }
     
 #selectoption{
@@ -93,6 +96,7 @@ html, body{
   background-color:#E6E6E6;
  
 }
+
 #op1{
      text-align:center; 
 }
