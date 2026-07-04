@@ -3,6 +3,10 @@
     box-sizing: border-box;
     /* Includes padding and border inside the element's width and height */
 }
+html, body{
+    max-width:100%;
+    overflow-x:hidden;
+}
 .navbar{
     background-color:#181a1a;
     height:60px;
@@ -62,8 +66,8 @@
 /* Box 3 */
 .nav-search{
     height:50px;
-   
-    
+    flex:1 1 300px;
+    min-width:150px;
     display: flex;
     align-items: center;
     margin-left:20px;
@@ -105,8 +109,9 @@
   font-size:18px;
 }
 #searchinput{
-    width:700px;
-   
+    width:100%;
+    min-width:0;
+    flex:1;
     font-size:16px;
 }
 
@@ -479,39 +484,6 @@ font-size:12px;
     transform:scaleY(1.1);
 
 }
-@media (max-width:768px){
-
-.boxes1{
-    flex-direction:column;
-    align-items:center;
-}
-
-.box1,
-.box2,
-.box3,
-.box4{
-    width:95%;
-    height:auto;
-    margin:15px 0;
-}
-
-.box2img{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    gap:15px;
-    padding:15px;
-}
-
-.box2-1,
-.box2-2,
-.box2-3,
-.box2-4{
-    width:48%;
-    margin:0;
-}
-
-}
 
 .finaltext{
     display:flex;
@@ -625,4 +597,250 @@ ul{
 }
 .pages a:hover{
     text-decoration: underline;
+}
+
+
+@media (max-width:1100px){
+    .panel-all{
+        width:100%;
+        flex-wrap:wrap;
+        left:0;
+        padding:6px 10px;
+        justify-content:center;
+        gap:10px;
+    }
+}
+
+
+@media (max-width:992px){
+    .hero-section{
+        height:auto;
+        padding-bottom:20px;
+    }
+    .hero-text{
+        position:static;
+        width:100%;
+        height:auto;
+        padding:10px;
+        top:0;
+        left:0;
+    }
+    .boxes1{
+        position:static;
+        top:0;
+        flex-wrap:wrap;
+        justify-content:center;
+        height:auto;
+    }
+    .box1,
+    .box2,
+    .box3,
+    .box4{
+        width:45%;
+        height:auto;
+        margin:10px;
+    }
+    .boxm{
+        display:none;
+    }
+    .boxes2{
+        position:static;
+        bottom:0;
+        height:auto;
+        flex-wrap:wrap;
+        justify-content:center;
+        padding-left:0;
+    }
+    .box1.b2{
+        width:45%;
+        height:auto;
+        margin:10px;
+    }
+    .finaltext{
+        position:static;
+        bottom:0;
+        height:auto;
+        padding:15px 0;
+    }
+    h2, .italics{
+        left:0;
+        text-align:center;
+        padding:0 15px;
+    }
+    .foot-panel1{
+        margin-top:0;
+    }
+}
+
+
+@media (max-width:768px){
+
+
+.navbar{
+    flex-wrap:wrap;
+    height:auto;
+    padding:10px 12px;
+    justify-content:space-between;
+    row-gap:10px;
+}
+
+.nav-logo{
+    order:1;
+    width:90px;
+    height:40px;
+}
+.nav-logo.border{
+    height:40px;
+}
+.logo{
+    height:40px;
+}
+
+.nav-address{
+    display:none;
+}
+
+.nav-signin,
+.nav-returns{
+    display:none;
+}
+
+.cart{
+    order:2;
+    height:40px;
+    width:auto;
+    padding:0 10px;
+}
+.cart.border{
+    height:40px;
+}
+.fa-cart-arrow-down{
+    top:8px;
+}
+#carttext{
+    top:12px;
+}
+
+.nav-search{
+    order:3;
+    flex-basis:100%;
+    width:100%;
+    min-width:0;
+    margin-left:0;
+}
+
+.boxes1{
+    flex-direction:column;
+    align-items:center;
+}
+
+.box1,
+.box2,
+.box3,
+.box4{
+    width:95%;
+    height:auto;
+    margin:15px 0;
+}
+
+.box2img{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:15px;
+    padding:15px;
+}
+
+.box2-1,
+.box2-2,
+.box2-3,
+.box2-4{
+    width:48%;
+    margin:0;
+}
+
+.boxes2{
+    flex-direction:column;
+    align-items:center;
+    padding-left:0;
+}
+
+.box1.b2{
+    width:90%;
+    margin:10px 0;
+}
+
+.footpanel2{
+    flex-direction:column;
+    align-items:center;
+    height:auto;
+    padding:25px 15px;
+}
+
+.footpanel2 ul{
+    text-align:center;
+    margin-top:20px;
+}
+
+.footpanel4 .pages{
+    flex-wrap:wrap;
+}
+}
+
+
+@media (max-width:480px){
+
+
+.nav-logo{
+    width:70px;
+}
+#carttext{
+    display:none; 
+}
+.cart{
+    padding:0 12px;
+}
+.fa-cart-arrow-down{
+    top:0;
+}
+#selectoption{
+    width:34px;
+}
+#op1{
+    font-size:11px;
+}
+
+.panel-all{
+    font-size:12px;
+}
+
+.hero-section{
+    height:auto;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box1.b2{
+    width:100%;
+}
+
+.box2-1,
+.box2-2,
+.box2-3,
+.box2-4{
+    width:100%;
+    margin-bottom:10px;
+}
+
+.footpanel4 .pages{
+    justify-content:center;
+    text-align:center;
+}
+
+.footpanel4 .pages a{
+    padding:6px;
+    font-size:12px;
+}
 }
