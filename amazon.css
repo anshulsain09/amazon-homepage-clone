@@ -674,10 +674,9 @@ ul{
     .foot-panel1{
         margin-top:0;
     }
+
 }
-.p2{
-    display: none;
-}
+
 
 @media (max-width:768px){
 
@@ -915,3 +914,9 @@ ul{
 }
 .hero-text{
     display:none;}
+}
+@media (max-width: 393px) {
+    .p2{
+        display:none;
+}
+}
