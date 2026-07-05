@@ -675,7 +675,9 @@ ul{
         margin-top:0;
     }
 }
-
+.p2{
+    display: none;
+}
 
 @media (max-width:768px){
 
@@ -732,7 +734,9 @@ ul{
     min-width:0;
     margin-left:0;
 }
-
+.p2{
+    display: none;
+}
 .boxes1{
     flex-direction:column;
     align-items:center;
@@ -824,7 +828,7 @@ ul{
 }
 
 #searchinput{
-    width:185px;
+    width:165px;
  
 }
 #search{
@@ -853,7 +857,7 @@ ul{
         display:grid;
         grid-template-columns:1fr 1fr;
         gap:12px;
-        transform:none;      /* cancel the desktop stretch */
+        transform:none;     
         margin-top:10px;
         margin-right:0;
     }
@@ -876,7 +880,7 @@ ul{
         display:grid;
         grid-template-columns:1fr 1fr;
         gap:12px;
-        transform:none;      /* cancel the desktop stretch */
+        transform:none;      
         margin-top:10px;
         margin-right:10px;
     }
