@@ -605,13 +605,28 @@ ul{
 
 
 @media (max-width:1100px){
+   .panel{
+        height:auto;
+        min-height:38px;
+    }
     .panel-all{
         width:100%;
-        flex-wrap:wrap;
         left:0;
         padding:6px 10px;
-        justify-content:center;
-        gap:10px;
+        flex-wrap:nowrap;
+        justify-content:flex-start;
+        overflow-x:auto;
+        -ms-overflow-style:none;
+        scrollbar-width:none;
+    }
+    .panel-all::-webkit-scrollbar{
+        display:none;
+    }
+    .panel-menu,
+    .p1{
+        flex:0 0 auto;
+        white-space:nowrap;
+        margin-right:16px;
     }
 }
 
