@@ -867,7 +867,7 @@ ul{
         width:auto;
         margin:0;          
     }
-}
+
 .box3{
     height:420px;
 }
@@ -914,6 +914,7 @@ ul{
 }
 .hero-text{
     display:none;}
+}
 }
 @media (max-width: 393px) {
     .p2{
